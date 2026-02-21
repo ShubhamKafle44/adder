@@ -1,0 +1,100 @@
+shubh@ShubhamLegion:~/adder$ make test/example1.run
+./test/example1.run
+cargo run -- test/example1.snek test/example1.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example1.snek test/example1.s`
+nasm -f elf64 test/example1.s -o runtime/our_code.o
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example1.run
+rm test/example1.s
+6
+shubh@ShubhamLegion:~/adder$ make test/example2.run
+./test/example2.run
+cargo run -- test/example2.snek test/example2.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example2.snek test/example2.s`
+nasm -f elf64 test/example2.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example2.run
+rm test/example2.s
+9
+shubh@ShubhamLegion:~/adder$ make test/example3.run
+./test/example3.run
+cargo run -- test/example3.snek test/example3.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example3.snek test/example3.s`
+nasm -f elf64 test/example3.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example3.run 
+rm test/example3.s
+0
+shubh@ShubhamLegion:~/adder$ make test/example4.run
+./test/example4.run
+cargo run -- test/example4.snek test/example4.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/adder test/example4.snek test/example4.s`
+nasm -f elf64 test/example4.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example4.run
+rm test/example4.s
+4
+shubh@ShubhamLegion:~/adder$ make test/example5.run
+./test/example5.run
+cargo run -- test/example5.snek test/example5.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example5.snek test/example5.s`
+nasm -f elf64 test/example5.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example5.run 
+rm test/example5.s
+5
+shubh@ShubhamLegion:~/adder$ make test/example6.run
+./test/example6.run
+cargo run -- test/example6.snek test/example6.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example6.snek test/example6.s`
+nasm -f elf64 test/example6.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example6.run 
+rm test/example6.s
+8
+shubh@ShubhamLegion:~/adder$ make test/example7.run
+./test/example7.run
+cargo run -- test/example7.snek test/example7.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/adder test/example7.snek test/example7.s`
+nasm -f elf64 test/example7.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example7.run
+rm test/example7.s
+4
+shubh@ShubhamLegion:~/adder$ make test/example8.run
+./test/example8.run
+cargo run -- test/example8.snek test/example8.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example8.snek test/example8.s`
+nasm -f elf64 test/example8.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example8.run 
+rm test/example8.s
+5
+shubh@ShubhamLegion:~/adder$ make test/example9.run
+./test/example9.run
+cargo run -- test/example9.snek test/example9.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/adder test/example9.snek test/example9.s`
+nasm -f elf64 test/example9.s -o runtime/our_code.o     
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example9.run 
+rm test/example9.s
+1000000
+shubh@ShubhamLegion:~/adder$ make test/example10.run
+./test/example10.run
+cargo run -- test/example10.snek test/example10.s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/adder test/example10.snek test/example10.s`
+nasm -f elf64 test/example10.s -o runtime/our_code.o    
+ar rcs runtime/libour_code.a runtime/our_code.o
+rustc -L runtime/ runtime/start.rs -o test/example10.run
+rm test/example10.s
+18
